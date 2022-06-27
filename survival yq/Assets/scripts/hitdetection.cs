@@ -20,6 +20,15 @@ public class hitdetection : MonoBehaviour
             GameObject.FindObjectOfType<healthbar>().kill();
             Debug.Log(healthpoints);
         }
+        if (col.gameObject.tag == "sword")
+        {
+            Debug.Log("hit");
+            Destroy(enemy);
+
+        }
     }
+
+
     
+
 }
