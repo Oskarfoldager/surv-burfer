@@ -14,6 +14,7 @@ public class hitdetection : MonoBehaviour
             Debug.Log("hit");
             Destroy(enemy);
             healthpoints--;
+
             Debug.Log(healthpoints);
         }
     }
