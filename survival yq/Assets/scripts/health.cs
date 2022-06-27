@@ -1,22 +1,26 @@
-/*using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class health : MonoBehaviour
 {
-    // Start is called before the first frame update
-    public Slider slider;
 
-    public void SetMaxHealth(static int health)
+    public int maxHealth = 100;
+    public int currentHealth;
+
+    // Start is called before the first frame update
+    void Start()
     {
-        slider.maxValue = health;
-        slider.value = health;
+        currentHealth = maxHealth;
     }
 
-    public void SetHealth(static int health)
+    // Update is called once per frame
+    void Update()
     {
-        slider.value = health;
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            currentHealth -= 1;
+            Debug.Log(currentHealth);
+        }
     }
 }
-*/

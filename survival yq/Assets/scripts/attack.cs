@@ -5,6 +5,9 @@ using UnityEngine;
 public class attack : MonoBehaviour
 {
     public GameObject sword;
+    public float period = 2f;
+    private float nextactiontime = 0;
+    private bool can;
 
     // Start is called before the first frame update
     void Start()
@@ -15,15 +18,21 @@ public class attack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-            if (Input.GetKey(KeyCode.E))
+        if (Time.time > nextactiontime)
+        {
+            if(can == true)
             {
-                sword.SetActive(true);
-
-
-
-
-
+                can = false;
+                sword.SetActive(false);
+            }
+            else
+            {
+                can = true;
+            }
+        }
+        if (Input.GetKey(KeyCode.E))
+        {
+            sword.SetActive(true);
         }
 
     }

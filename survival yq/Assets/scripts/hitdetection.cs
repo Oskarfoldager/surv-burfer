@@ -2,10 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class hitdetection : MonoBehaviour
 {
     public static int healthpoints = 10;
     public GameObject enemy;
+
+
     void OnTriggerEnter2D(Collider2D col)
     {
         Debug.Log("OnCollisionEnter2D");
@@ -14,8 +17,9 @@ public class hitdetection : MonoBehaviour
             Debug.Log("hit");
             Destroy(enemy);
             healthpoints--;
-
+            GameObject.FindObjectOfType<healthbar>().kill();
             Debug.Log(healthpoints);
         }
     }
+    
 }
