@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class hitdetection : MonoBehaviour
 {
-
-    private void OnCollisionEnter(Collision collision)
+    public GameObject enemy;
+    void OnTriggerEnter2D(Collider2D col)
     {
-        if (collision.collider.tag == "Player")
+        Debug.Log("OnCollisionEnter2D");
+        if (col.gameObject.tag == "Player")
         {
             Debug.Log("hit");
+            Destroy(enemy);
         }
     }
 }
