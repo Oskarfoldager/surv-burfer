@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class hitdetection : MonoBehaviour
 {
+    public static int healthpoints = 10;
     public GameObject enemy;
     void OnTriggerEnter2D(Collider2D col)
     {
@@ -12,6 +13,8 @@ public class hitdetection : MonoBehaviour
         {
             Debug.Log("hit");
             Destroy(enemy);
+            healthpoints--;
+            Debug.Log(healthpoints);
         }
     }
 }
