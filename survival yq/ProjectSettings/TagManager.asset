@@ -6,6 +6,8 @@ TagManager:
   tags:
   - enemy
   - sword
+  - tree1
+  - tree2
   layers:
   - Default
   - TransparentFX
