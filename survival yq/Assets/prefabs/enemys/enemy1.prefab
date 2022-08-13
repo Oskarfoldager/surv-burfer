@@ -168,3 +168,7 @@ MonoBehaviour:
   enemy: {fileID: 4826302021316891281}
   enemystrength: 1
   enemysvalue: 1
+  period: 2
+  thisenemy: {fileID: 6285375658522873635}
+  thisenemy2: {fileID: -3379571734754669636}
+  player: {fileID: 0}
