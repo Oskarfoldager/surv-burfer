@@ -167,3 +167,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemy: {fileID: 4826302021316891281}
   enemystrength: 1
+  enemysvalue: 20

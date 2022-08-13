@@ -9,6 +9,7 @@ public class hitdetection : MonoBehaviour
     public GameObject enemy;
     public static int points;
     public int enemystrength;
+    public int enemysvalue;
 
 
     void OnTriggerEnter2D(Collider2D col)
@@ -26,7 +27,7 @@ public class hitdetection : MonoBehaviour
         {
             Debug.Log("hit");
             Destroy(enemy);
-            points++;
+            points+= enemysvalue;
 
         }
     }
