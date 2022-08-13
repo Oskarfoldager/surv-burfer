@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6285375658522873635}
   - component: {fileID: -5957592645668892310}
   m_Layer: 0
-  m_Name: player
+  m_Name: enemy1
   m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -166,3 +166,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 4826302021316891281}
+  enemystrength: 1
+  enemysvalue: 1
