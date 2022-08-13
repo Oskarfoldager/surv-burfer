@@ -20,6 +20,8 @@ public class healthbar: MonoBehaviour
     }
     public void kill()
     {
-        slider.value--;
+        slider.value -= hitdetection.heathl;
+        Debug.Log("kill");
     }
+
 }
